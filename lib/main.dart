@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:work/MyHomepage.dart';
 import 'package:work/screens/FirstPage.dart';
-import 'package:work/screens/LoginPage.dart';
-import 'package:work/screens/RecoverPage.dart';
-import 'package:work/screens/SignUpPage.dart';
-import 'package:work/screens/VerificationPage.dart';
-import 'package:work/screens/splash_screen.dart';
+// import 'package:work/screens/LoginPage.dart';
+// import 'package:work/screens/RecoverPage.dart';
+// import 'package:work/screens/SignUpPage.dart';
+// import 'package:work/screens/VerificationPage.dart';
+// import 'package:work/screens/splash_screen.dart';
 
 void main() {
   runApp(const MyApp());
