@@ -93,14 +93,14 @@ class LoginPage extends StatelessWidget {
                       ],
                     ),
                   ),
-                  appendText("Not a member?", "Sign Up"),
+                  appendText("Not a member?", "Sign Up",context, SignUpPage()),
                 ],
               ),
             )));
   }
 }
 
-Widget appendText(String whiteText, String blueText) {
+Widget appendText(String whiteText, String blueText, context, Page) {
   return Container(
     margin: const EdgeInsets.only(top: 20.0),
     child: Row(
@@ -118,7 +118,12 @@ Widget appendText(String whiteText, String blueText) {
             ),
           ),
           TextButton(
-              onPressed: () {},
+              onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => Page),
+          );
+        },
               child: Text(
                 '  $blueText',
                 style: const TextStyle(
@@ -155,7 +160,7 @@ class LowerText extends StatelessWidget {
               ),
             ),
             Text(
-              "  Sign Up",
+              " Sign Up",
               style: const TextStyle(
                 fontSize: 15,
                 fontFamily: "Poppins",
@@ -165,7 +170,7 @@ class LowerText extends StatelessWidget {
               ),
             )
           ]),
-    );
+    ); 
   }
 }
 

@@ -5,6 +5,7 @@ import 'package:work/components/TextInputComponent.dart';
 import 'package:work/components/TitleText.dart';
 import 'package:work/screens/FirstPage.dart';
 import 'package:work/screens/LoginPage.dart';
+import 'package:work/screens/VerificationPage.dart';
 // import 'package:timer_count_down/timer_controller.dart';
 // import 'package:timer_count_down/timer_count_down.dart';
 
@@ -88,11 +89,11 @@ class RecoverPage extends StatelessWidget {
                     
                     alignment: Alignment.bottomRight,
                     child:
-                        appendText("Not received?", "Resend.")
+                        appendText("Not received?", "Resend.", context, RecoverPage())
                         ),
                       Container(
                         margin: const EdgeInsets.fromLTRB(2, 5, 2,5),
-                        child: MyButton("Recover", Colors.indigo.shade900, context,FirstPage() )),
+                        child: MyButton("Recover", Colors.indigo.shade900, context,VerificationPage() )),
                     ],
                   ),
                 ),

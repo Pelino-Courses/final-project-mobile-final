@@ -3,6 +3,8 @@ import 'package:work/MyHomepage.dart';
 import 'package:work/components/TextInputComponent.dart';
 import 'package:work/components/TitleText.dart';
 import 'package:work/screens/LoginPage.dart';
+import 'package:work/screens/RecoverPage.dart';
+import 'package:work/screens/VerificationPage.dart';
 
 class SignUpPage extends StatelessWidget {
   const SignUpPage({super.key});
@@ -60,7 +62,7 @@ class SignUpPage extends StatelessWidget {
                           TextInputComponent('Confirm Password', 'Confirm Password',
                               Icon(Icons.lock), Colors.white),
                                                             
-                          MyButton("Next", Colors.indigo.shade900, context, MyHomepage()),
+                          MyButton("Next", Colors.indigo.shade900, context, VerificationPage()),
                   
                         ],
                       ),
@@ -68,7 +70,7 @@ class SignUpPage extends StatelessWidget {
           
                 Container(
                   margin: EdgeInsets.fromLTRB(0, 10, 0, 10),
-                  child: appendText("Already have an account?", "Login Here.")),
+                  child: appendText("Already have an account?", "Login Here.",  context, LoginPage())),
                   ],
                 ),
               )),

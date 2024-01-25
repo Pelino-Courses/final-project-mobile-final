@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:work/MyHomepage.dart';
 import 'package:work/components/TitleText.dart';
-// import 'package:work/screens/LoginPage.dart';
+import 'package:work/screens/LoginPage.dart';
 
 class FirstPage extends StatelessWidget {
   const FirstPage({super.key});
@@ -50,7 +50,7 @@ class FirstPage extends StatelessWidget {
                                   // textBaseline:"end"
                                 ),),
                           ),
-                        ),
+                         ),
               
                             Container(
                               margin: const EdgeInsets.fromLTRB(10, 80, 10, 80),
@@ -68,7 +68,12 @@ class FirstPage extends StatelessWidget {
                                   disabledBackgroundColor: Colors.indigo,
                                   // padding: EdgeInsets.all(20),
                                 ),
-                                onPressed: () {},
+                                onPressed: () {
+                                   Navigator.push(
+                                    context,
+                                    MaterialPageRoute(builder: (context) => LoginPage()),
+                                  );
+                                },
                                 child: Text("Join Now", style: const TextStyle(
                                 fontSize: 15,
                                 fontFamily: "Poppins",

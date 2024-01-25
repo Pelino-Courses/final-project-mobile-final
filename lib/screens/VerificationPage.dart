@@ -111,7 +111,7 @@ class VerificationPage extends StatelessWidget {
                     margin: EdgeInsets.fromLTRB(0, 10, 0, 10),
                     alignment: Alignment.bottomCenter,
                     child:
-                        appendText("Didn't receive code?", "Resend.")),
+                        appendText("Didn't receive code?", "Resend.", context, RecoverPage())),
               ],
             ),
           )),
@@ -173,4 +173,4 @@ Widget OTPBox(context) {
 //       },
 //     );
 //   }
-// }
+
