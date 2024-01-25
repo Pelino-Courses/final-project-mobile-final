@@ -93,7 +93,7 @@ class RecoverPage extends StatelessWidget {
                         ),
                       Container(
                         margin: const EdgeInsets.fromLTRB(2, 5, 2,5),
-                        child: MyButton("Recover", Colors.indigo.shade900, context,VerificationPage() )),
+                        child: MyButton("Recover", Colors.indigo.shade900, context,FirstPage() )),
                     ],
                   ),
                 ),
